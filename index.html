@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+    .stat:hover {
+        background-color: #f30707d4;
+        /* Change background color on hover */
+        color: #000000;
+        /* Change text color on hover */
+        cursor: url(cursor.png) 4 12, pointer;
+        /* Show pointer cursor on hover */
+    }
+
+    .stats:hover {
+        cursor: url(cursor.png) 4 12, pointer;
+    }
+
+    .stat:hover img {
+        border: #f30707d4;
+        border-radius: 18px;
+        cursor: url(cursor.png) 4 12, pointer;
+    }
+
+    .number:hover {
+        cursor: url(cursor.png) 4 12, pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h2 class="award">AWARD WINNING</h2>
+            <h1 class="title">DIGITAL MARKETING AGENCY</h1>
+            <p class="description">Morbi iaculis lacus nec risus finibus tristique et fermentum nibh. Pellentesque vitae
+                ornare elit, et fringilla orci. In purus, Morbi iaculis lacus nec risus finibus tristique et fermentum.
+            </p>
+            <button id="contactButton" onclick="Contact">CONTACT US</button>
+        </div>
+        <div class="image-section">
+            <img src="girl.png" alt="Digital Marketing Agency" class="myimage">
+        </div>
+    </div>
+
+    <!--------------------------SERVICESS-2nd Page----------------------->
+    <br>
+    <div class="myservice">
+
+        <header>
+            <h1>WHAT WE DO</h1>
+            <h2>SERVICES PROVIDE</h2>
+            <h2 style="position: relative;
+            left: -29.6%;
+            top: -20px;">FOR YOU</h2>
+            <p class="justified-text">Morbi iaculis lacus nec risus finibus tristique et fermentum nibh. Pellentesque
+                vitae ornare elit, et fringilla orci. In purus, Morbi iaculis lacus nec risus finibus tristique et
+                fermentum.</p>
+            <main>
+                <div id="frame">
+                    <input type="radio" name="frame" id="frame1" checked />
+                    <input type="radio" name="frame" id="frame2" />
+                    <input type="radio" name="frame" id="frame3" />
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="inner">
+                                <div class="frame">
+                                    <div class="card">
+                                        <img src="image1.png" alt="Image 1">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image2.png" alt="Image 2">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image4.jpg" alt="Image 3">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image3.png" alt="Image 3">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z" />
+                                            </svg>
+
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="frame">
+                                    <div class="card">
+                                        <img src="image1.png" alt="Image 1">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image2.png" alt="Image 2">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image4.jpg" alt="Image 3">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image3.png" alt="Image 3">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z" />
+                                            </svg>
+
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="frame">
+                                    <div class="card">
+                                        <img src="image1.png" alt="Image 1">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image2.png" alt="Image 2">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image4.jpg" alt="Image 3">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image3.png" alt="Image 3">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="frame">
+                                    <div class="card">
+                                        <img src="image1.png" alt="Image 1">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image2.png" alt="Image 2">
+                                        <div class="hover-content">
+                                            <h3>IMAGE 2</h3>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image4.jpg" alt="Image 3">
+                                        <div class="hover-content">
+                                            <h3>WEB DEVELOPMENT</h3>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="image3.png" alt="Image 3">
+                                        <div class="hover-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="styled-svg"
+                                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z" />
+                                            </svg>
+                                            <p>Morbi iaculis lacus nec risus finibus tristique et fermentum nibh.
+                                                Pellentesque</p>
+                                            <button id="openFyle" onclick="openFyle()">READ MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="frame1"></label>
+                        <label for="frame2"></label>
+                        <label for="frame3"></label>
+                    </div>
+                    <div id="bullets">
+                        <label for="frame1"></label>
+                        <label for="frame2"></label>
+                        <label for="frame3"></label>
+                    </div>
+                </div>
+            </main>
+    </div>
+
+    <!----------------------------WHY CHOOSE US-3rd Page------------------------------------------>
+    <div class="container2">
+        <div class="header2">WHY CHOOSE US</div>
+        <div class="title">WHY WE ARE BEST</div>
+        <div class="features">
+            <div class="feature">
+                <img src="image5.png" alt="Vision">
+                <div class="feature-title">Clarified Vision & Target</div>
+                <div class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
+            </div>
+            <div class="feature">
+                <img src="image6.png" alt="Performance">
+                <div class="feature-title" style="position: relative;
+                left: -18%;">High Performance</div>
+                <div class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
+            </div>
+            <div class="feature">
+                <img src="image7.png" alt="Security">
+                <div class="feature-title" style="position: relative;
+                left: -21%;">Maintain Security</div>
+                <div class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
+            </div>
+            <div class="feature">
+                <img src="image8.png" alt="Strategy">
+                <div class="feature-title" style="width: 126%;
+                position: relative;
+                left: -21%;
+                ">Better Strategy & Quality</div>
+                <div class="feature-description" style="position: relative;
+                left: -17%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------WHY ARE WE BEST-4th Page-------------------------------->
+
+    <div class="container3">
+        <h2 class="project-heading" style="color: #ff4d4d;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;">OUR PROJECT</h2>
+        <h1 class="main-heading" style="font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;">WHY WE ARE BEST</h1>
+        <div class="content">
+            <div class="image-container">
+                <img src="image9.png" alt="Project Image" id="mainImage">
+            </div>
+            <div class="text-container">
+                <div class="text-block" onclick="changeImage('image10.jpg')">
+                    <h3 style="position: relative;
+                        left: -2%;">Genderless Kei - Japan's Hot</h3>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="text-block highlight" onclick="changeImage('image9.png')">
+                    <h3 style="position: relative;
+                        left: -9%;
+                    ">Better Strategy & Quality</h3>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="text-block" onclick="changeImage('image11.jpg')">
+                    <h3 style="position: relative;
+                        left: -2%;">Genderless Kei - Japan's Hot</h3>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------INTERACTIONS-5th Page--------------------------------->
+    <div class="container4">
+        <h2 style=" color: #ff4d4d;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;">EXPERTS GROWTH</h2>
+        <h1 style="font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;">OUR COMPANY GROWTH</h1>
+        <div class="stats">
+            <div class="stat" style="height: 166px;">
+                <div class="icon">❤️</div>
+                <div class="number" data-target="199" style="position: relative;
+                top: 12px;">0</div>
+                <p style="font-size: 14px;
+                color: #000000;
+                position: relative;
+                top: 18px;">Satisfied Customers</p>
+            </div>
+            <div class="stat">
+                <div class="icon"><img src="image12.png" alt=""></div>
+                <div class="number" data-target="1591">0</div>
+                <p>Days of Operation</p>
+            </div>
+            <div class="stat">
+                <div class="icon"><img src="image13.png" alt=""></div>
+                <div class="number" data-target="283">0</div>
+                <p style=" font-size: 14px;
+                    color: #000000;">Complete Projects</p>
+            </div>
+            <div class="stat">
+                <div class="icon"><img src="image13.png" alt=""></div>
+                <div class="number" data-target="75">0</div>
+                <p style=" font-size: 14px;
+                    color: #000000;" class="interaction">Win Awards</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------END PAGE------------------------------------------->
+    <div class="container5">
+        <div class="header" style="color: red;">CLIENT'S FEEDBACK</div>
+        <div class="title">PEOPLE SAY'S ABOUT US !</div>
+        <div class="feedback">
+            Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+            interested. Sections Bonorum et Malorum original.
+        </div>
+        <div class="client">
+            <p style="position: relative;
+                left: -21.3%;
+    color: red;
+    top: 6px;">JANNAT TUMPA </p>
+            <p style="color: #939090;
+    position: relative;
+    left: -7.4%;
+    top: -24px;">- COOA, AMERIMAR ENTERPRISES, INC.</p>
+        </div>
+    </div>
+    <div class="logos">
+        <img src="image15.png" alt="Logo 1">
+        <img src="image16.png" alt="Logo 2">
+        <img src="image17.png" alt="Logo 3">
+        <img src="image18.png" alt="Logo 4">
+        <img src="image19.png" alt="Logo 5">
+        <img src="image20.png" alt="Logo 6">
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

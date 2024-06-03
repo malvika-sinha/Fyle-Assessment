@@ -1,0 +1,616 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 74%;
+    left: 0%;
+    width: 100%;
+    top: 6%;
+    position: relative;
+}
+
+.text-section {
+    padding: 49px;
+    flex: 1;
+    position: relative;
+    left: 12%;
+    top: 29%;
+}
+
+.award {
+    color: #f30707d4;
+    font-size: 18px;
+    margin: 0;
+}
+
+.title {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    width: 44%;
+}
+
+#contactButton {
+    background-color: #f30707d4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.image-section {
+    flex: 1;
+}
+
+
+.myimage {
+    width: 21%;
+    height: 88%;
+    position: relative;
+    top: -57%;
+    left: 63%;
+
+}
+
+/* ----------------------SERVICES-2nd Page------------------------*/
+
+.myservice {
+    position: relative;
+    left: 0%;
+    top: 4%;
+    background-color: #e3e3e399;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    color: #f30707d4;
+    max-width: 546px;
+    margin: 0 auto;
+    position: relative;
+    left: -28%;
+}
+
+.justified-text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    top: -133px;
+    left: 22%;
+    position: relative;
+}
+
+header h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    position: relative;
+    left: -23%;
+}
+
+header p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 356px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255 255 255 / 10%);
+    border: 2px solid f4f4f4;
+    border-radius: 38px;
+}
+
+.card img {
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .hover-content {
+    bottom: -100%;
+    background: #f30707d4;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: bottom 0.3s;
+    height: 101%;
+    width: 89%;
+    position: absolute;
+    left: 6%;
+
+}
+
+.card:hover .hover-content {
+    bottom: 0;
+}
+
+.card .hover-content h3 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: -8px;
+    line-height: 35px;
+    position: relative;
+    top: 33%;
+    font-weight: 500;
+}
+
+.card .hover-content p {
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 5px;
+    top: 34%;
+    font-size: 83%;
+    width: 115%;
+    left: -11%;
+    position: relative;
+}
+
+.card .hover-content button {
+    color: #f30707d4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    position: relative;
+    top: 32%;
+}
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    background: #333;
+}
+
+.card .hover-content button:hover {
+    background: #000000;
+    color: white;
+}
+
+.justified-text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#frame {
+    margin: 0 auto;
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+}
+
+#frame input[type=radio] {
+
+    display: none;
+}
+
+#frame label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    width: 204%;
+    height: 76%;
+    left: -39%;
+    top: -43%;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#frame1:checked~#slides .inner {
+    margin-left: 0;
+    height: 29rem;
+}
+
+#frame2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#frame3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+
+#slides .frame {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112%;
+    color: black;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+/* active class for images*/
+#frame1:checked~#controls label:nth-child(2),
+#frame2:checked~#controls label:nth-child(3),
+#frame3:checked~#controls label:nth-child(1) {
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+/* active class for navigation button*/
+#frame1:checked~#controls label:nth-last-child(2),
+#frame2:checked~#controls label:nth-last-child(3),
+#frame3:checked~#controls label:nth-last-child(1) {
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: left;
+    position: relative;
+    left: -33%;
+    top: 1%
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+#frame1:checked~#bullets label:nth-child(1),
+#frame2:checked~#bullets label:nth-child(2),
+#frame3:checked~#bullets label:nth-child(3) {
+    background: #da4040;
+}
+
+i {
+    font-size: 48px;
+    color: #333;
+}
+
+.styled-svg {
+    width: 55px;
+    height: auto;
+    fill: #e5dada;
+    stroke: #fff;
+    stroke-width: -4px;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+    position: relative;
+    top: 31%;
+}
+
+/* Change fill and stroke on hover */
+.styled-svg:hover {
+    fill: #383333;
+    stroke: hsl(0, 0%, 0%);
+}
+
+/* --------------------------3rd Page----------------------------------*/
+.container2 {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 19%;
+    background-color: white;
+}
+
+.header2 {
+    color: #f30707d4;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 180px;
+    text-align: center;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    left: -42%;
+}
+
+.feature-title {
+    font-size: 15px;
+    margin-bottom: 14px;
+    width: 122%;
+    position: relative;
+    left: -5%;
+}
+
+.feature-description {
+    font-size: 13px;
+    color: #423b3b;
+    text-align: start;
+}
+
+/* --------------------------------WHY ARE WE BEST-4th Page---------------------------------------------- */
+.container3 {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    top: 28%;
+    left: 7%;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    left: 13%;
+    top: 32px;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-block {
+    background-color: #f4f4f4;
+    padding: 24px;
+    margin-bottom: 7px;
+    border-radius: -10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 39%;
+    height: 97px;
+    cursor: pointer;
+}
+
+.text-block h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #333
+}
+
+.text-block p {
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
+}
+
+.highlight {
+    background-color: #f30707d4;
+    color: #fff;
+}
+
+.highlight h3,
+.highlight p {
+    color: #fff;
+}
+
+#mainImage {
+    max-width: 100%;
+    height: 452px;
+}
+
+
+/*----------------------------INTERACTIONS-5th Page---------------------------- */
+
+.container4 {
+    text-align: center;
+    max-width: 1409px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    position: relative;
+    top: 43%;
+    left: 0%;
+
+}
+
+.container4:hover {
+    cursor: url(cursor.png) 4 12, pointer;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    left: 11%;
+}
+
+.stat {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: background-color 0.3s;
+    cursor: url(cursor.png) 4 12, pointer;
+    /* Add transition effect for smooth color change */
+}
+
+.stat:hover {
+    background-color: #f30707d4;
+    /* Change background color on hover */
+    color: #000000;
+    /* Change text color on hover */
+    cursor: url(cursor.png) 4 12, pointer;
+    /* Show pointer cursor on hover */
+}
+
+.stats:hover {
+    cursor: url(cursor.png) 4 12, pointer;
+}
+
+.stat:hover img {
+    border: #f30707d4;
+    border-radius: 18px;
+    cursor: url(cursor.png) 4 12, pointer;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.number {
+    font-size: 36px;
+    color: #f30707d4;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.number:hover {
+    cursor: url(cursor.png) 4 12, pointer;
+
+}
+
+/*------------------------------- END PAGE--------------------------------------- */
+.container5 {
+    text-align: center;
+    padding: 204px 20px;
+    position: relative;
+    top: 21%;
+}
+
+.feedback {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 22px;
+    width: 50%;
+    text-align: justify;
+    position: relative;
+    left: 25%;
+    top: 7px;
+}
+
+.client {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logos {
+    background-color: #f30707d4;
+    padding: 20px 0;
+    position: relative;
+    top: -1%;
+    height: 242px;
+}
+
+.logos img {
+    margin: 0 15px;
+    vertical-align: middle;
+    position: relative;
+    left: 15%;
+    top: 40%;
+}

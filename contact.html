@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ececec;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact-card {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 11px;
+    top: -11px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #a19b9b;
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"] {
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #7a7878;
+    outline: none;
+    width: 100%;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-button {
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-button:hover {
+    background-color: #e04350;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d1d1d1;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ff3366;
+    border-color: #ff3366;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+</style>
+<body>
+    <div class="contact-container">
+        <div class="contact-card">
+            <h2>Talk to us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="email">Work email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group" style="position: relative;
+                    left: -1%;
+                    top: 25px;">
+                        <label for="first-name">First name*</label>
+                        <input type="text" id="first-name" name="first-name" required style="width: 45%;">
+                    </div>
+                    <div class="form-group" style=" position: relative;
+                    left: 55%;
+                    top: -45px;">
+                        <label for="last-name">Last name*</label>
+                        <input type="text" id="last-name" name="last-name" required style=" width: 45%;">
+                    </div>
+                </div>
+                <div class="form-group" style=" position: relative;
+                top: -36px;">
+                    <input type="checkbox" id="terms" name="terms" required style="position: relative;
+                    left: -3px;
+                    top: 17px;">
+                    <label for="terms" style="position: relative;
+    top: 25px;
+    left: 1%;">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+                </div>
+                <button type="submit" class="contact-button">Contact Us</button>
+            </form>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(event.target);
+      
+      const getformUrl = 'https://getform.io/f/paoxjmzb';
+      
+      fetch(getformUrl, {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Submitted successfully');
+        } else {
+          alert('Failed to submit form data');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    });
+  </script>
+</script>
+</html>
